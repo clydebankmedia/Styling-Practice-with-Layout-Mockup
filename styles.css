@@ -1,0 +1,74 @@
+/* === Base Page Styling === */
+body {
+  font-family: sans-serif;
+  margin: 2rem; /* Adds space around the entire page */
+  background-color: #d2ddea; /* Soft blue background for contrast */
+}
+
+/* === Layout Containers: Header, Main, Footer === */
+header,
+main,
+footer {
+  border-radius: 8px; /* Rounded corners for all major sections */
+  padding: 1.5rem 0.5em; /* Inside spacing: top/bottom and sides */
+  margin-bottom: 1.5rem; /* Space between sections */
+}
+
+/* === Header Section === */
+header {
+  background-color: #3b5998; /* Dark blue background */
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.125rem; /* Large title text */
+  font-weight: 400;     /* Normal (not bold) weight */
+}
+
+/* === Main Section === */
+main {
+  background-color: #ffffff; /* White background for content */
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* === Article or Section Blocks === */
+.content-block {
+  margin-bottom: 1.5em;
+}
+
+/* Image inside article */
+.content-block img {
+  float: left;             /* Moves image to the left of the text */
+  margin-right: 1em;       /* Space between image and paragraph */
+  width: 100%;             /* Responsive width (max capped below) */
+  max-width: 200px;        /* Prevents image from being too wide */
+  height: auto;            /* Keeps natural proportions */
+  max-height: 200px;       /* Prevents image from getting too tall */
+  object-fit: cover;       /* Crops image to fill box without distortion */
+  border-radius: 4px;      /* Slight rounding on image corners */
+}
+
+/* Clear float after image so following text isn't squished */
+.content-block::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* === Footer Section === */
+#site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#site-footer p {
+  font-size: 2.125rem;
+  font-weight: 400;
+  margin: 0;
+}
