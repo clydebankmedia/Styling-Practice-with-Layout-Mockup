@@ -1,5 +1,3 @@
-# Solution - TKTK 
-
 # Solution Code - Styling Practice with Mockup
 
 <details>
